@@ -29,7 +29,7 @@
 //     console.log(fruit, index);
 // });
 
-const numbers = [1, 2, 3, 4];
+// const numbers = [1, 2, 3, 4];
 
 // console.log(numbers, 'numbers');
 // const doubledNumbers = numbers.map((num) => {
@@ -39,9 +39,31 @@ const numbers = [1, 2, 3, 4];
 // console.log(doubledNumbers, 'doubledNumbers');
 
 
-const evenNumbers = numbers.filter((num) => {
-    return num % 2 === 0;
-}
-);
+// const evenNumbers = numbers.filter((num) => {
+//     return num % 2 === 0;
+// }
+// );
 
-console.log(evenNumbers, 'evenNumbers');
+// console.log(evenNumbers, 'evenNumbers');
+// const sum = numbers.reduce((acc, num) => {
+//     return acc + num;
+// })
+
+// console.log(sum, 'sum');
+
+
+// const fruits = ['apple', 'banana', 'cherry'];
+// console.log(fruits.sort(), 'fruits');
+// console.log(fruits.reverse(), 'fruits');
+
+// ARRAYS MULTI DIMENSIONAL
+
+// const matrix = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9],
+// ];
+
+// console.log(matrix, 'matrix');
+// console.log(matrix[1][1], 'matrix');
+
