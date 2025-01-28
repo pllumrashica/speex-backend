@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Paris",
+    "country": "France",
+    "attractions": [
+      "Eiffel Toer",
+      "Louvre Museum",
+      "Notre-Dame Cathedral"
+    ],
+    "average_cost": 1500,
+    "rating": 4.9,
+    "visitors": 3000000,
+    "average_stay": 5,
+    "best_season": "Spring",
+    "image": "https://www.planetware.com/photos/FR/paris-eiffel-tower.jpg"
+  }
+]
