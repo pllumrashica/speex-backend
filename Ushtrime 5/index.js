@@ -30,7 +30,6 @@ const writeData = (data) => {
 
 // get request
 app.get("/destinations", (req, res) => {
-  // console.log("destination");
   const data = readData();
   res.json(data);
 
@@ -109,6 +108,53 @@ app.get("/destinations/:id", (req, res) => {
  // 1. to find countrys that has more attractions 
  // 2. to find the country that find country that has rating the most.
  // 3. to find the total visitors count for all destinations
+
+app.get("/countries/most_attractions", (req, res) => {
+  const data = readData();
+  const countryAttractions = {};
+
+  data.forEach(destination => {
+    if (!countryAttractions[destination.country]) {
+      countryAttractions[destination.country] = 0;
+    }
+    countryAttractions[destination.country] += destination.attractions.length;
+  });
+
+  const sortedCountries = Object.entries(countryAttractions).sort((a, b) => b[1] - a[1]);
+  const mostAttractionsCountry = sortedCountries[0];
+
+  res.json({ country: mostAttractionsCountry[0], attractions: mostAttractionsCountry[1] });
+});
+
+app.get("/countries/most_rating", (req, res) => {
+  const data = readData();
+  const countryRatings = {};
+
+  data.forEach(destination => {
+    if (!countryRatings[destination.country]) {
+      countryRatings[destination.country] = { totalRating: 0, count: 0 };
+    }
+    countryRatings[destination.country].totalRating += destination.rating;
+    countryRatings[destination.country].count += 1;
+  });
+
+  const averageRatings = Object.entries(countryRatings).map(([country, { totalRating, count }]) => ({
+    country,
+    averageRating: totalRating / count
+  }));
+
+  const sortedCountries = averageRatings.sort((a, b) => b.averageRating - a.averageRating);
+  const highestRatedCountry = sortedCountries[0];
+
+  res.json({ country: highestRatedCountry.country, averageRating: highestRatedCountry.averageRating });
+});
+
+app.get("/total_visitors", (req, res) => {
+  const data = readData();
+  const totalVisitors = data.reduce((sum, destination) => sum + destination.visitors, 0);
+  res.json({ totalVisitors });
+});
+
 
 app.listen(3000, () => {
   console.log(`Server is running on http://localhost:3000`);

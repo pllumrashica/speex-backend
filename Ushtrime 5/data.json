@@ -10,9 +10,154 @@
     ],
     "average_cost": 1500,
     "rating": 4.9,
-    "visitors": 30000000,
+    "visitors": 3000000,
     "average_stay": 5,
     "best_season": "Spring",
-    "image": "https://picsum.photos/id/1015/500/300"
+    "image": "https://www.planetware.com/photos/FR/paris-eiffel-tower.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tokyo",
+    "country": "Japan",
+    "attractions": [
+      "Shibuya Crossing",
+      "Tokyo Tower",
+      "Senso-ji Temple"
+    ],
+    "average_cost": 1800,
+    "rating": 4.8,
+    "visitors": 3500000,
+    "average_stay": 6,
+    "best_season": "Autumn",
+    "image": "https://www.planetware.com/photos-large/JPN/japan-tokyo-tower.jpg"
+  },
+  {
+    "id": 3,
+    "name": "New York City",
+    "country": "USA",
+    "attractions": [
+      "Statue of Liberty",
+      "Times Square",
+      "Central Park"
+    ],
+    "average_cost": 2000,
+    "rating": 5,
+    "visitors": 4000000,
+    "average_stay": 5,
+    "best_season": "Fall",
+    "image": "https://www.planetware.com/photos-large/USA/usa-new-york-city-statue-of-liberty.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Rome",
+    "country": "Italy",
+    "attractions": [
+      "Colosseum",
+      "Vatican City"
+    ],
+    "average_cost": 1400,
+    "rating": 4.9,
+    "visitors": 2500000,
+    "average_stay": 5,
+    "best_season": "Spring",
+    "image": "https://www.planetware.com/photos-large/ITA/italy-rome-colosseum.jpg"
+  },
+  {
+    "id": 5,
+    "name": "London",
+    "country": "United Kingdom",
+    "attractions": [
+      "Big Ben",
+      "Tower of London",
+      "Buckingham Palace"
+    ],
+    "average_cost": 1700,
+    "rating": 4.8,
+    "visitors": 3800000,
+    "average_stay": 4,
+    "best_season": "Summer",
+    "image": "https://www.planetware.com/photos-large/ENG/england-london-big-ben.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Dubai",
+    "country": "UAE",
+    "attractions": [
+      "Burj Khalifa",
+      "Palm Jumeirah",
+      "Dubai Mall",
+      "Burj Al Arab",
+      "Dubai Marina"
+    ],
+    "average_cost": 1900,
+    "rating": 4.7,
+    "visitors": 3200000,
+    "average_stay": 5,
+    "best_season": "Winter",
+    "image": "https://www.planetware.com/photos-large/UAE/uae-dubai-burj-khalifa.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sydney",
+    "country": "Australia",
+    "attractions": [
+      "Sydney Opera House",
+      "Bondi Beach",
+      "Harbour Bridge"
+    ],
+    "average_cost": 2200,
+    "rating": 4.8,
+    "visitors": 2700000,
+    "average_stay": 6,
+    "best_season": "Summer",
+    "image": "https://www.planetware.com/photos-large/AUS/australia-sydney-opera-house.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Bangkok",
+    "country": "Thailand",
+    "attractions": [
+      "Grand Palace",
+      "Wat Arun",
+      "Floating Markets"
+    ],
+    "average_cost": 1200,
+    "rating": 4.7,
+    "visitors": 3300000,
+    "average_stay": 5,
+    "best_season": "Winter",
+    "image": "https://www.planetware.com/photos-large/THA/thailand-bangkok-grand-palace.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Barcelona",
+    "country": "Spain",
+    "attractions": [
+      "Sagrada Familia",
+      "Park Güell",
+      "La Rambla"
+    ],
+    "average_cost": 1600,
+    "rating": 4.8,
+    "visitors": 2900000,
+    "average_stay": 5,
+    "best_season": "Spring",
+    "image": "https://www.planetware.com/photos-large/ESP/spain-barcelona-sagrada-familia.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Cairo",
+    "country": "Egypt",
+    "attractions": [
+      "Pyramids of Giza",
+      "Egyptian Museum",
+      "Khan el-Khalili"
+    ],
+    "average_cost": 1300,
+    "rating": 4.6,
+    "visitors": 2500000,
+    "average_stay": 4,
+    "best_season": "Winter",
+    "image": "https://www.planetware.com/photos-large/EGY/egypt-cairo-pyramids.jpg"
   }
 ]
